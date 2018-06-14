@@ -62,8 +62,7 @@ class Note extends Component{
 
     renderDisplay(){
         return(
-
-            <div className="note">
+            <div className="note drop-shadow lifted">
                 <p>{this.state.text}</p>
                 <span className="btn-row">
                     <button id="edit"
