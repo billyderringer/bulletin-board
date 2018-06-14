@@ -17,9 +17,6 @@ body{
 .board{
   height: 100vh;
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   overflow: auto;
   position: absolute;
   background-image: url("./assets/split-wall.jpg");
@@ -27,11 +24,25 @@ body{
   background-repeat: no-repeat;
 }
 
-.note{
+#add-container{
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
+}
+
+#add-btn{
+  padding: 5px 15px;
+  margin: 10px 0;
+  background-color: var(--green);
+}
+
+#note-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.note{
   position: relative;
   width: 150px;
   height: 150px;
@@ -74,7 +85,7 @@ button:focus{
 #edit-form{
   width: 140px;
   height: 110px;
-  margin-top: -25px;  background-color: var(--yellow);
+  background-color: var(--yellow);
   border: 1px solid var(--offYellow);
 }
 
