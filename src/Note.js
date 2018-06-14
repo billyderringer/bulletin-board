@@ -62,6 +62,7 @@ class Note extends Component{
 
     renderDisplay(){
         return(
+
             <div className="note">
                 <p>{this.state.text}</p>
                 <span className="btn-row">
