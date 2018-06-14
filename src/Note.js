@@ -2,7 +2,6 @@ import React, {Component} from 'react'
 import FaPencil from 'react-icons/lib/fa/pencil'
 import FaTrash from 'react-icons/lib/fa/trash'
 import FaFloppyO from 'react-icons/lib/fa/floppy-o'
-import Check from 'react-icons/lib/fa/check'
 
 class Note extends Component{
     constructor(props) {
@@ -69,10 +68,6 @@ class Note extends Component{
                     <button id="edit"
                             onClick={this.edit}>
                         <FaPencil />
-                    </button>
-                    <button id="check"
-                            onClick={this.complete}>
-                        <Check />
                     </button>
                     <button id="remove"
                             onClick={this.remove}>
